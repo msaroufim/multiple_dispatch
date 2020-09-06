@@ -10,13 +10,14 @@ We'll be going over how Multiple Dispatch lets you write
 
 ## Usage
 
-1. To run, make sure you [download Julia](https://julialang.org/downloads/)
-2. Open the julia terminal
-3. type ```]```
-4. ```add Pluto```
-5. Cntrl Z
-6. using Pluto
-7. Pluto.run(1234)
-8. Navigate to ```localhost:1234``` in your browser
+### Run remotely (do this it's easier)
+1. Go to https://pluto-on-binder.glitch.me/
+2. Put in my notebook url https://github.com/msaroufim/multiple_dispatch/blob/master/src/multiple_dispatch.jl
+3. Push enter and give it a a minute or two, loading the Julia libraries takes a while
 
-I'm in the process of preparing a hosted solution
+### Run locally
+
+1. using Pluto
+2. Pluto.run(1234)
+3. Navigate to ```localhost:1234``` in your browser and open up the file
+
