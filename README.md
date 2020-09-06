@@ -21,3 +21,7 @@ We'll be going over how Multiple Dispatch lets you write
 2. Pluto.run(1234)
 3. Navigate to ```localhost:1234``` in your browser and open up the file
 
+
+One of the many pretty pictures in this article showing how you can get error bars for free in a differential equation solver that doesn't natively support uncertainty using multiple dispatch.
+
+![Capture.PNG](Capture.PNG)

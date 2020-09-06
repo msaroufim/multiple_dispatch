@@ -312,8 +312,8 @@ If you enjoyed this post, you'll enjoy Julia even more so make your way to [Juli
 
 # ╔═╡ Cell order:
 # ╟─d90b8ea0-f073-11ea-1e38-3dbed8d0a254
-# ╠═a3ed04f2-f079-11ea-3c88-9bdb95688687
-# ╠═e0731fae-f081-11ea-3fd8-77e7c07829b2
+# ╟─a3ed04f2-f079-11ea-3c88-9bdb95688687
+# ╟─e0731fae-f081-11ea-3fd8-77e7c07829b2
 # ╟─19382380-f079-11ea-1ae6-3110ff67c346
 # ╠═3081e670-f079-11ea-18a1-cbd7e0c38b4e
 # ╠═b50b57ee-f079-11ea-1fc1-d303920ecaeb
