@@ -13,18 +13,6 @@ macro bind(def, element)
     end
 end
 
-# ╔═╡ d9d1d190-f083-11ea-3820-17ade8ad913e
-using Measurements
-
-# ╔═╡ c70bcc90-f084-11ea-1b25-f39e6baa1c0b
-using DifferentialEquations
-
-# ╔═╡ 6ba08520-f085-11ea-17d6-556a42ca7ce7
-using Plots
-
-# ╔═╡ 38e50b00-f086-11ea-39bd-0f814d49b254
-using PlutoUI
-
 # ╔═╡ d90b8ea0-f073-11ea-1e38-3dbed8d0a254
 md"# Writing Composable Software with Multiple Dispatch"
 
@@ -165,10 +153,37 @@ But as you guessed it, multiple dispatch adds support with no additional effort
 "
 
 # ╔═╡ bd816fa0-f083-11ea-0926-41923dee7334
-import Pkg
+begin
+	import Pkg
+	Pkg.activate(mktempdir())
+end
+
+# ╔═╡ d9d1d190-f083-11ea-3820-17ade8ad913e
+begin
+	Pkg.add("Measurements")
+	using Measurements
+end
+
+# ╔═╡ c70bcc90-f084-11ea-1b25-f39e6baa1c0b
+begin
+	Pkg.add("DifferentialEquations")
+	using DifferentialEquations
+end
+
+# ╔═╡ 6ba08520-f085-11ea-17d6-556a42ca7ce7
+begin
+	Pkg.add("Plots")
+	using Plots
+end
+
+# ╔═╡ 38e50b00-f086-11ea-39bd-0f814d49b254
+begin
+	Pkg.add("PlutoUI")
+	using PlutoUI
+end
 
 # ╔═╡ d6831bc0-f083-11ea-1d72-a75b1e7c5db2
-Pkg.add("Measurements")
+
 
 # ╔═╡ 59ee9a20-f084-11ea-0ea4-693c7d882e4d
 # An uncertain measurement
@@ -182,16 +197,16 @@ Pkg.add("Measurements")
 md"How would this ever work with an existing library?"
 
 # ╔═╡ 51927210-f085-11ea-3c1c-ab3b7a445578
-Pkg.add("DifferentialEquations")
+
 
 # ╔═╡ 675e4790-f085-11ea-0e20-51b293a86faf
-Pkg.add("Plots")
+
 
 # ╔═╡ 89705b22-f085-11ea-1052-215a1b8b2f5f
 md"We've set the uncertainties to 0 initially, feel free to increase them and see what happens. This notebook made with Pluto.jl which is reactive so you don't need click run anywhere after changing the values" 
 
 # ╔═╡ b8e34480-f085-11ea-1e70-81530ed89fab
-Pkg.add("PlutoUI")
+
 
 # ╔═╡ c0931510-f086-11ea-017f-33e69b342fb6
 md"Go ahead change these from 0 and see what happens!"
@@ -328,7 +343,7 @@ If you enjoyed this post, you'll enjoy Julia even more so make your way to [Juli
 # ╠═80933250-f07d-11ea-1726-afbb54269143
 # ╟─48665b60-f07c-11ea-356e-113a7e553d78
 # ╟─eea04630-f081-11ea-3c23-7f18452e4a9f
-# ╠═a8da79d0-f07d-11ea-3f5a-fddcec33487d
+# ╟─a8da79d0-f07d-11ea-3f5a-fddcec33487d
 # ╠═c0355e4e-f07e-11ea-12c1-cdc89b529787
 # ╟─6cd88230-f080-11ea-239e-0337317018dc
 # ╟─92c32a20-f082-11ea-21f2-976338a8ebcb
@@ -336,7 +351,7 @@ If you enjoyed this post, you'll enjoy Julia even more so make your way to [Juli
 # ╟─798db940-f081-11ea-16b1-79d3205202ca
 # ╟─0ac70010-f082-11ea-3633-2d5ad12da9af
 # ╠═bd816fa0-f083-11ea-0926-41923dee7334
-# ╠═d6831bc0-f083-11ea-1d72-a75b1e7c5db2
+# ╟─d6831bc0-f083-11ea-1d72-a75b1e7c5db2
 # ╠═d9d1d190-f083-11ea-3820-17ade8ad913e
 # ╠═59ee9a20-f084-11ea-0ea4-693c7d882e4d
 # ╠═7731e790-f084-11ea-2462-f3c9e719f3b9
@@ -346,7 +361,7 @@ If you enjoyed this post, you'll enjoy Julia even more so make your way to [Juli
 # ╠═c70bcc90-f084-11ea-1b25-f39e6baa1c0b
 # ╠═6ba08520-f085-11ea-17d6-556a42ca7ce7
 # ╟─89705b22-f085-11ea-1052-215a1b8b2f5f
-# ╠═b8e34480-f085-11ea-1e70-81530ed89fab
+# ╟─b8e34480-f085-11ea-1e70-81530ed89fab
 # ╠═38e50b00-f086-11ea-39bd-0f814d49b254
 # ╟─c0931510-f086-11ea-017f-33e69b342fb6
 # ╠═3bdffb80-f086-11ea-00df-afa163290213
@@ -367,4 +382,4 @@ If you enjoyed this post, you'll enjoy Julia even more so make your way to [Juli
 # ╠═cc305700-f088-11ea-118c-15bbe612f0ff
 # ╠═3b4e57f0-f088-11ea-1129-457606f2f119
 # ╟─664c7780-f087-11ea-3094-f185ce4a5d25
-# ╠═fd3fe820-f082-11ea-0571-39b3c5ab0d0a
+# ╟─fd3fe820-f082-11ea-0571-39b3c5ab0d0a
