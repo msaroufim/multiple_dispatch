@@ -10,7 +10,10 @@ We'll be going over how Multiple Dispatch lets you write
 
 ## Usage
 
-### Run remotely (do this it's easier)
+### Run remotely (easiest way)
+Click here https://mybinder.org/v2/gh/fonsp/vscode-binder/master?urlpath=pluto/open?url=https%3A%2F%2Fraw.githubusercontent.com%2Fmsaroufim%2Fmultiple_dispatch%2Fmaster%2Fsrc%2Fmultiple_dispatch.jl
+
+### Run remotely
 1. Go to https://pluto-on-binder.glitch.me/
 2. Put in my notebook url https://github.com/msaroufim/multiple_dispatch/blob/master/src/multiple_dispatch.jl
 3. Push enter and give it a a minute or two, loading the Julia libraries takes a while
