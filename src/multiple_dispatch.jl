@@ -310,6 +310,19 @@ md"If you're interested there are larger more robust automatic differentiation p
 And if you'd like to better understand the basics of Automatic Differentiation I've written a seperate beginner friendly article [Automatic Differentiation Step by Step](https://medium.com/@marksaroufim/automatic-differentiation-step-by-step-24240f97a6e6) 
 "
 
+# ╔═╡ 4f80d470-f167-11ea-3370-550bd48b428c
+md"How is this different from function overloading in C++?
+
+Wikunia makes the point very succintly in [his tutorial](https://opensourc.es/blog/basics-multiple-dispatch/)
+
+**Difference**: Function overloading using the static type and not the actual type.
+
+He goes on to also make the point that if a language has OOP it doesn't really need multiple dispatch BUT that multiple dispatch makes it easier to extend a class even if you don't have access to its internals.
+
+That last point is a big deal when you're working with other peoples code."
+
+
+
 # ╔═╡ fd3fe820-f082-11ea-0571-39b3c5ab0d0a
 md"## Acknowledgements
 
@@ -382,4 +395,5 @@ If you enjoyed this post, you'll enjoy Julia even more so make your way to [Juli
 # ╠═cc305700-f088-11ea-118c-15bbe612f0ff
 # ╠═3b4e57f0-f088-11ea-1129-457606f2f119
 # ╟─664c7780-f087-11ea-3094-f185ce4a5d25
+# ╠═4f80d470-f167-11ea-3370-550bd48b428c
 # ╟─fd3fe820-f082-11ea-0571-39b3c5ab0d0a
