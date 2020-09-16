@@ -20,7 +20,7 @@ Click here https://mybinder.org/v2/gh/fonsp/vscode-binder/master?urlpath=pluto/o
 2. Put in my notebook url https://github.com/msaroufim/multiple_dispatch/blob/master/src/multiple_dispatch.jl
 3. Push enter and give it a a minute or two, loading the Julia libraries takes a while
 
-### Run locally
+### Run locally (most reliable)
 
 1. using Pluto
 2. Pluto.run(1234)
