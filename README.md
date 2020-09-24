@@ -2,7 +2,7 @@
 
 This is an interactive tutorial made in a Pluto.jl notebook
 
-Multiple dispatch is arguably the definining feature of Julia which lets you write code which is as easy as Python but as fast as C. The goal of this tutorial is to show you just how powerful Multiple Dispatch is and why it's used in pretty much every single Julia library.
+Multiple dispatch is arguably the defining feature of Julia which lets you write code which is as easy as Python but as fast as C. The goal of this tutorial is to show you just how powerful Multiple Dispatch is and why it's used in pretty much every single Julia library.
 
 We'll be going over how Multiple Dispatch lets you write
 1. Game/Physics Engines
